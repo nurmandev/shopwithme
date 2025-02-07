@@ -90,7 +90,7 @@ export default function Header() {
                     className={`text-accent transition hover:text-accent/75 ${
                       pathname === "/products" ? "text-primary" : ""
                     } `}
-                    href="/Contact-us"
+                    href="/Contact"
                   >
                     Contact us
                   </Link>
