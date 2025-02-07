@@ -64,16 +64,6 @@ export default function Header() {
                 </li>
 
                 <li>
-                  <Link
-                    className={`text-accent transition hover:text-accent/75 ${
-                      pathname === "/products" ? "text-primary" : ""
-                    } `}
-                    href="/products"
-                  >
-                    About us
-                  </Link>
-                </li>
-                <li>
                   <select
                     className={`text-accent transition hover:text-accent/75 ${
                       pathname === "/categories" ? "text-primary" : ""
@@ -85,7 +75,16 @@ export default function Header() {
                     <option value="2">Mining</option>
                   </select>
                 </li>
-
+                <li>
+                  <Link
+                    className={`text-accent transition hover:text-accent/75 ${
+                      pathname === "/products" ? "text-primary" : ""
+                    } `}
+                    href="/products"
+                  >
+                    About us
+                  </Link>
+                </li>
                 <li>
                   <Link
                     className={`text-accent transition hover:text-accent/75 ${
