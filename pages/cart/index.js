@@ -322,7 +322,7 @@ export default function Cart() {
                     </div>
                     <div class="col-span-2">
                       <label class="mb-1 block text-sm font-medium text-text">
-                        Zip
+                        Phone Number
                       </label>
                       <input
                         type="text"
@@ -371,9 +371,6 @@ export default function Cart() {
     </>
   );
 }
-
-
-
 
 // import { useContext, useEffect, useState } from "react";
 // import { CartContext } from "../../lib/CartContext";
