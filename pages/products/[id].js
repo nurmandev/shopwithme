@@ -59,12 +59,12 @@ export default function ProductPage({ product }) {
                 </p>
               </div>
 
-              <div>
+              {/* <div>
                 <label className="text-text font-semibold">Gender</label>
                 <p className="mt-2 text-accent list-disc list-inside">
                   {product?.gender}
                 </p>
-              </div>
+              </div> */}
             </div>
 
             <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 my-3">
