@@ -244,6 +244,17 @@ export default function Header() {
                           Categories
                         </Link>
                       </li>
+                      <li>
+                        <Link
+                          className={`text-accent transition hover:text-accent/75 ${
+                            pathname === "/categories" ? active : inActive
+                          }`}
+                          href="/about-us"
+                          onClick={toggleMobileNav}
+                        >
+                          About us
+                        </Link>
+                      </li>
 
                       <li>
                         {session && (
