@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import HeroImage from "../../public/tresure-image.jpg";
-import TractorImage from "../../public/tractor.jpg";
+import TractorImage from "../../public/tractor-2.png";
 import ArchitectImage from "../../public/set-architect-tools.jpg";
 import CompassImage from "../../public/compass.jpg";
 
