@@ -3,6 +3,7 @@ import { useContext, useEffect, useState } from "react";
 import { CartContext } from "../../lib/CartContext";
 import { useRouter } from "next/router";
 import { signOut, useSession } from "next-auth/react";
+import logo from "../../public/tresur-logo.jpg";
 export default function Header() {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [currentPath, setCurrentPath] = useState("");
@@ -31,7 +32,12 @@ export default function Header() {
             className="flex gap-1 items-center text-text font-medium text-lg hover:text-primary "
             href="/"
           >
-            <span>Tresure Hunter</span>
+            <img
+              src="../tresur-logo.jpg"
+              class="h-10 w-35 "
+              alt="Tresure Hunter"
+            />
+            {/* <span>Tresure Hunter</span> */}
           </Link>
 
           <div className="flex flex-1 items-center justify-end md:justify-between">
