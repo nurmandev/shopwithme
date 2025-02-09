@@ -1,11 +1,4 @@
-import {
-  Facebook,
-  Globe,
-  Instagram,
-  Linkedin,
-  Twitter,
-  Youtube,
-} from "lucide-react";
+import { Facebook, Telegram, Instagram, Linkedin, Headset } from "lucide-react";
 import Link from "next/link";
 
 const Footer = () => {
@@ -14,7 +7,7 @@ const Footer = () => {
       <section className="md:flex flex-col md:py-10 md:justify-between">
         <div className="p-10 space-y-10 md:space-y-0 md:text-center md:flex justify-between md:px-80 md:space-x-20">
           <div>©2025 Tresure Hunter. All rights reserved.</div>
-        
+
           <div className="flex items-center justify-center space-x-2">
             <div className="bg-black p-2 rounded-full">
               <Link href="https://web.facebook.com/">
@@ -29,8 +22,8 @@ const Footer = () => {
             </div>
 
             <div className="bg-black p-2 rounded-full">
-              <Link href="https://www.linkedin.com/company/nurman-tech">
-                <Linkedin className="h-6 w-6 text-white" />
+              <Link href="https://t.me/Treasurehunters66">
+                <Headset className="h-6 w-6 text-white" />
               </Link>
             </div>
           </div>
