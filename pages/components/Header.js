@@ -81,6 +81,16 @@ export default function Header() {
                     About us
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    className={`text-accent transition hover:text-accent/75 ${
+                      pathname === "/contact" ? "text-primary" : ""
+                    } `}
+                    href="/contact"
+                  >
+                    Contact us
+                  </Link>
+                </li>
               </ul>
             </nav>
 
@@ -218,18 +228,6 @@ export default function Header() {
                           All Products
                         </Link>
                       </li>
-
-                      <li>
-                        <Link
-                          className={`text-accent transition hover:text-accent/75 ${
-                            pathname === "/categories" ? active : inActive
-                          }`}
-                          href="/categories"
-                          onClick={toggleMobileNav}
-                        >
-                          Categories
-                        </Link>
-                      </li>
                       <li>
                         <Link
                           className={`text-accent transition hover:text-accent/75 ${
@@ -239,6 +237,17 @@ export default function Header() {
                           onClick={toggleMobileNav}
                         >
                           About us
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          className={`text-accent transition hover:text-accent/75 ${
+                            pathname === "/contact" ? active : inActive
+                          }`}
+                          href="/contact"
+                          onClick={toggleMobileNav}
+                        >
+                          Contact us
                         </Link>
                       </li>
 
