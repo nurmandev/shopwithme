@@ -27,7 +27,7 @@ const ImageGrid = ({ images }) => {
 
 export default function Hero() {
   const images = [
-    "../../public/tresure-image.jpg",
+    "./tresure-image.jpg",
     "../../public/tresure-image.jpg",
     "../../public/tresure-image.jpg",
     "../../public/tresure-image.jpg",
