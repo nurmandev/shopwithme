@@ -1,10 +1,14 @@
 import Link from "next/link";
+import Image from "next/image";
 import HeroImage from "../../public/tresure-image.jpg";
+import TractorImage from "../../public/tractor.jpg";
+import ArchitectImage from "../../public/set-architect-tools.jpg";
+import CompassImage from "../../public/compass.jpg";
 
 // Reusable ImageGrid component
 const ImageGrid = ({ images }) => {
   return (
-    <div className="grid grid-cols-1 gap-6">
+    <div className="grid grid-cols-2 md:grid-cols-2 gap-6">
       {images.map((image, index) => (
         <div
           key={index}
@@ -14,10 +18,13 @@ const ImageGrid = ({ images }) => {
               : "-rotate-2 translate-x-2"
           } hover:-rotate-6 hover:translate-x-8 transition-transform duration-300 ease-in-out`}
         >
-          <img
+          <Image
             src={image}
             alt={`Static Image ${index + 1}`}
             className="h-full w-full object-cover object-center"
+            width={288}
+            height={320}
+            priority // Ensures faster loading
           />
         </div>
       ))}
@@ -26,12 +33,7 @@ const ImageGrid = ({ images }) => {
 };
 
 export default function Hero() {
-  const images = [
-    "./tresure-image.jpg",
-    "../../public/tresure-image.jpg",
-    "../../public/tresure-image.jpg",
-    "../../public/tresure-image.jpg",
-  ];
+  const images = [CompassImage, HeroImage, TractorImage, ArchitectImage];
 
   return (
     <div className="relative overflow-hidden bg-background my-14 md:my-10">
@@ -43,7 +45,7 @@ export default function Hero() {
             </h1>
 
             <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold tracking-tight text-text">
-              Tresure Hunter
+              Treasure Hunter
             </h1>
 
             <p className="mt-4 line-clamp-3 text-lg sm:text-xl lg:text-2xl text-gray-500">
@@ -52,7 +54,7 @@ export default function Hero() {
 
             <div className="mt-10 flex flex-col max-sm:items-center max-sm:justify-center">
               {/* Mobile Image Grid */}
-              <div className="lg:hidden relative">
+              <div className="lg:hidden">
                 <ImageGrid images={images.slice(0, 2)} />
               </div>
 
@@ -75,7 +77,7 @@ export default function Hero() {
             {/* Desktop Image Grid */}
             <div className="hidden lg:block absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
               <div className="flex items-center space-x-6 lg:space-x-8">
-                <ImageGrid images={images.slice(2, 4)} />
+                <ImageGrid images={images} />
               </div>
             </div>
           </div>
