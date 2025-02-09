@@ -193,7 +193,7 @@ export async function getServerSideProps() {
 //                           Add to cart
 //                         </button>
 //                       </div>
-                      
+
 //                     </div>
 //                   </div>
 //                 </div>
@@ -206,7 +206,6 @@ export async function getServerSideProps() {
 //   );
 
 // }
-
 
 // export async function getServerSideProps() {
 //   await mongooseConnect();
