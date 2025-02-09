@@ -74,9 +74,9 @@ export default function Header() {
                 <li>
                   <Link
                     className={`text-accent transition hover:text-accent/75 ${
-                      pathname === "/contact-us" ? "text-primary" : ""
+                      pathname === "/about" ? "text-primary" : ""
                     } `}
-                    href="/contact"
+                    href="/about"
                   >
                     About us
                   </Link>
@@ -233,9 +233,9 @@ export default function Header() {
                       <li>
                         <Link
                           className={`text-accent transition hover:text-accent/75 ${
-                            pathname === "/categories" ? active : inActive
+                            pathname === "/about" ? active : inActive
                           }`}
-                          href="/about-us"
+                          href="/about"
                           onClick={toggleMobileNav}
                         >
                           About us

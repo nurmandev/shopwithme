@@ -6,7 +6,7 @@ import Image from "next/image";
 import { Download, PhoneCall } from "lucide-react";
 import Link from "next/link";
 
-const Contact = () => {
+const About = () => {
   return (
     <>
       <div className="md:py-40 py-10 px-10">
@@ -132,4 +132,4 @@ const Contact = () => {
   );
 };
 
-export default Contact; // Ensure a default export
+export default About; // Ensure a default export
