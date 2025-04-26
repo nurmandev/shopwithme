@@ -1,4 +1,5 @@
 import Image from "next/image";
+import secondImage from "../../public/tresure-image.jpg";
 
 const Detect = () => {
   return (
@@ -11,11 +12,12 @@ const Detect = () => {
       </div>
 
       <div className="my-10 flex flex-col md:flex-row gap-16">
-        {/* <Image
+        <Image
           className="w-full md:max-w-[450px]"
-          src="../../public/compass.jpg"
+          src={secondImage}
+          
           alt="الكشف عبر القمر الصناعي"
-        /> */}
+        />
         <div className="flex flex-col justify-center gap-6 md:w-2/4 text-gray-600">
           <p>
             شركه treasure hunters هي شركه عالميه تم تأسيسها في عام 2017 في
@@ -41,7 +43,11 @@ const Detect = () => {
       </div>
 
       <div className="text-2xl py-4 uppercase">
-        <Title text1={"لماذا"} text2={"تختارنا؟"} />
+        <div className="inline-flex gap-2 items-center mb-8 justify-center">
+          <p className="text-gray-700 font-bold">لماذا</p>
+          <p className="text-gray-700 font-bold">تختارنا؟</p>
+          <p className="w-8 sm:w-12 h-[1px] sm:h-[2px] bg-gray-700"></p>
+        </div>
       </div>
 
       <div className="flex flex-col md:flex-row text-sm mb-20 gap-6">
