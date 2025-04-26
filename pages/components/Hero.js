@@ -14,7 +14,7 @@ const ImageGrid = ({ images }) => {
           key={index}
           className={`w-72 h-80 overflow-hidden rounded-lg border border-secondary transform ${
             index % 2 === 0
-          } hover:-rotate-6 hover:translate-x-8 transition-transform duration-300 ease-in-out`}
+          }`}
         >
           <Image
             src={image}
