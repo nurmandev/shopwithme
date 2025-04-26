@@ -1,5 +1,6 @@
 "use client";
 
+
 import Image from "next/image";
 import secondImage from "../../public/tresure-image.jpg";
 
@@ -14,6 +15,14 @@ const Detect = () => {
       </div>
 
       <div className="my-10 flex flex-col md:flex-row gap-16">
+        <Image
+          className="w-full md:max-w-[450px]"
+          src={secondImage}
+          alt="الكشف عبر القمر الصناعي"
+          width={450}
+          height={300} // adjust according to image
+        />
+
         <div className="flex flex-col justify-center gap-6 md:w-2/4 text-gray-600">
           <p>
             شركه treasure hunters هي شركه عالميه تم تأسيسها في عام 2017 في
