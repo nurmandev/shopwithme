@@ -80,9 +80,9 @@ export default function Header() {
                 <li>
                   <Link
                     className={`text-accent transition hover:text-accent/75 ${
-                      pathname === "/DetectPage" ? "text-primary" : ""
+                      pathname === "/detect" ? "text-primary" : ""
                     } `}
-                    href="/DetectPage"
+                    href="/detect"
                   >
                     الكشف عن طريق القمر الصناعي
                   </Link>
@@ -248,9 +248,9 @@ export default function Header() {
                       <li>
                         <Link
                           className={`text-accent transition hover:text-accent/75 ${
-                            pathname === "/DetectPage" ? "text-primary" : ""
+                            pathname === "/detect" ? "text-primary" : ""
                           } `}
-                          href="/DetectPage"
+                          href="/detect"
                         >
                           الكشف عن طريق القمر الصناعي
                         </Link>
