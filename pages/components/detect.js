@@ -1,12 +1,9 @@
 const DetectPage = () => {
   return (
-    <div>
+    <div dir="rtl">
       <div className="text-2xl text-center pt-8 border-t uppercase">
-        <div className="inline-flex gap-2 items-center mb-3">
-          <p className="text-gray-500">
-            الكشف عن طريق القمر الصناعي{" "}
-            <span className="text-gray-700 font-medium"></span>
-          </p>
+        <div className="inline-flex gap-2 items-center mb-3 justify-center">
+          <p className="text-gray-700 font-bold">الكشف عن طريق القمر الصناعي</p>
           <p className="w-8 sm:w-12 h-[1px] sm:h-[2px] bg-gray-700"></p>
         </div>
       </div>
@@ -15,7 +12,7 @@ const DetectPage = () => {
         <img
           className="w-full md:max-w-[450px]"
           src="../../public/compass.jpg"
-          alt=""
+          alt="الكشف عبر القمر الصناعي"
         />
         <div className="flex flex-col justify-center gap-6 md:w-2/4 text-gray-600">
           <p>
@@ -31,6 +28,7 @@ const DetectPage = () => {
             التنقيب عن الكنوز والثروات الباطنية من خلال الابتكار المستمر،
             والاستدامة، والاعتماد على تقنيات موثوقة ومتطورة.
           </p>
+
           <b className="text-gray-800">رسالتنا</b>
           <p>
             تقديم حلول تقنية متقدمة تحدث ثورة في مجال التنقيب تحت الأرض، وتمكّن

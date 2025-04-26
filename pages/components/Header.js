@@ -80,6 +80,16 @@ export default function Header() {
                 <li>
                   <Link
                     className={`text-accent transition hover:text-accent/75 ${
+                      pathname === "/DetectPage" ? "text-primary" : ""
+                    } `}
+                    href="/DetectPage"
+                  >
+                    الكشف عن طريق القمر الصناعي
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className={`text-accent transition hover:text-accent/75 ${
                       pathname === "/about" ? "text-primary" : ""
                     } `}
                     href="/about"
@@ -97,16 +107,7 @@ export default function Header() {
                     Contact us
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    className={`text-accent transition hover:text-accent/75 ${
-                      pathname === "/new" ? "text-primary" : ""
-                    } `}
-                    href="/new"
-                  >
-                    الكشف عن طريق القمر الصناعي
-                  </Link>
-                </li>
+               
               </ul>
             </nav>
 
@@ -247,6 +248,16 @@ export default function Header() {
                       <li>
                         <Link
                           className={`text-accent transition hover:text-accent/75 ${
+                            pathname === "/DetectPage" ? "text-primary" : ""
+                          } `}
+                          href="/DetectPage"
+                        >
+                          الكشف عن طريق القمر الصناعي
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          className={`text-accent transition hover:text-accent/75 ${
                             pathname === "/about" ? active : inActive
                           }`}
                           href="/about"
@@ -266,16 +277,7 @@ export default function Header() {
                           Contact us
                         </Link>
                       </li>
-                      <li>
-                        <Link
-                          className={`text-accent transition hover:text-accent/75 ${
-                            pathname === "/new" ? "text-primary" : ""
-                          } `}
-                          href="/new"
-                        >
-                          الكشف عن طريق القمر الصناعي
-                        </Link>
-                      </li>
+
                       <li>
                         {session && (
                           <button onClick={() => signOut()}>logout</button>
