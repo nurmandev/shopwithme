@@ -1,5 +1,8 @@
 import { Facebook, Instagram, Headset, Mail } from "lucide-react";
+import telegramImage from "../../public/telegram.png";
+
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -23,7 +26,14 @@ const Footer = () => {
 
             <div className="bg-black p-2 rounded-full">
               <Link href="https://t.me/TreasureHuntersx">
-                <Headset className="h-6 w-6 text-white" />
+               <Image
+                        className="w-full md:max-w-[40px]"
+                        src={telegramImage}
+                        alt="الكشف عبر القمر الصناعي"
+                        width={50}
+                        height={50} // adjust according to image
+                      />
+                {/* <Headset className="h-6 w-6 text-white" telegram/> */}
               </Link>
             </div>
           </div>

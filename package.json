@@ -1,5 +1,5 @@
 {
-  "name": "my-shop-frontend",
+  "name": "tresureHunter",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -20,7 +20,8 @@
     "react-hot-toast": "^2.4.1",
     "react-paystack": "^5.0.0",
     "react-spinners": "^0.13.8",
-    "stripe": "^14.2.0"
+    "stripe": "^14.2.0",
+    "tresureHunter": "file:"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
