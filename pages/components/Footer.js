@@ -22,7 +22,7 @@ const Footer = () => {
             </div>
 
             <div className="bg-black p-2 rounded-full">
-              <Link href="https://t.me/Treasurehunters66">
+              <Link href="https://t.me/TreasureHuntersx">
                 <Headset className="h-6 w-6 text-white" />
               </Link>
             </div>

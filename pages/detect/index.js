@@ -1,8 +1,7 @@
 "use client";
 
-
 import Image from "next/image";
-import secondImage from "../../public/tresure-image.jpg";
+import secondImage from "../../public/detect.jpg";
 
 const Detect = () => {
   return (
