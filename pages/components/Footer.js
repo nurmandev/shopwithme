@@ -27,9 +27,9 @@ const Footer = () => {
             <div className="bg-black p-2 rounded-full">
               <Link href="https://t.me/TreasureHuntersx">
                <Image
-                        className="w-full md:max-w-[40px]"
+                        className="w-full md:max-w-[50px]"
                         src={telegramImage}
-                        alt="الكشف عبر القمر الصناعي"
+                        alt="telegram"
                         width={50}
                         height={50} // adjust according to image
                       />

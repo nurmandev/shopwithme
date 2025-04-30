@@ -4,6 +4,7 @@ import HeroImage from "../../public/tresure-image.jpg";
 import TractorImage from "../../public/tractor-2.png";
 import ArchitectImage from "../../public/set-architect-tools.jpg";
 import CompassImage from "../../public/compass.jpg";
+import telegramImage from "../../public/telegram.png";
 
 // Reusable ImageGrid component
 const ImageGrid = ({ images }) => {
@@ -57,9 +58,9 @@ export default function Hero() {
               </div>
 
               <div className="flex gap-4 items-center max-sm:justify-center max-sm:mt-6">
-                <Link href="/cart">
+                <Link href="https://t.me/TreasureHuntersx">
                   <button className="mt-6 inline-block rounded-md border border-transparent bg-primary px-6 py-3 text-center font-medium text-white hover:text-accent">
-                    Go to cart
+                    Contact us
                   </button>
                 </Link>
 
